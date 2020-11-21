@@ -8,10 +8,11 @@ class Bill_App:
         self.root.geometry("1350x700+0+0")
         self.root.title("AIMS BILL-SOFTWARE")
         bg_color = "#074463"
-
+         #======= Please Enter Your Shop name.
         title = Label(self.root,text=" ARYA JAN SEVA KENDRA BILLING-SOFTWARE", bd=10, relief=GROOVE, bg=bg_color, fg="Yellow",font=("time new roman", 30, "bold"), pady=0).pack(fill=X)
         #=============Varibale==========
         #=============B/W Copy==========
+        #======= Please Enter Your Items Name.
         self.Copy=IntVar()
         self.PhotoGrapy=IntVar()
         self.Color=IntVar()
@@ -62,6 +63,7 @@ class Bill_App:
         F2=LabelFrame(self.root,bd=10,relief=GROOVE,text="Black-White Copy",font=("time new roman",15,"bold"),fg="gold",bg=bg_color)    
         F2.place(x=5 ,y=180,width=325,height=380)
         
+         #======= Please Enter Your Items Name.
         copy_lbl=Label(F2,text="B/W  copy",font=("time new roman",16,"bold"),bg=bg_color ,fg="lightgreen").grid(row=0,column=0,padx=10,pady=10,sticky="w")
         copy_txt=Entry(F2,width=8,textvariable=self.Copy,font=("time new roman",16,"bold"),bd=5,relief=SUNKEN).grid(row=0,column=1,padx=10,pady=10)
         
